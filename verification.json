@@ -1,0 +1,131 @@
+{
+  "screenshots": [
+    "/Users/wuwanqi/Documents/ChatGPT/5013/output/price-memory-evidence/01-shopper-offer.png",
+    "/Users/wuwanqi/Documents/ChatGPT/5013/output/price-memory-evidence/02-price-memory-reveal.png",
+    "/Users/wuwanqi/Documents/ChatGPT/5013/output/price-memory-evidence/02b-shopper-reveal-context.png",
+    "/Users/wuwanqi/Documents/ChatGPT/5013/output/price-memory-evidence/03-merchant-before.png",
+    "/Users/wuwanqi/Documents/ChatGPT/5013/output/price-memory-evidence/04-merchant-event.png",
+    "/Users/wuwanqi/Documents/ChatGPT/5013/output/price-memory-evidence/05-coupon-strategy.png",
+    "/Users/wuwanqi/Documents/ChatGPT/5013/output/price-memory-evidence/06-reference-150-test.png",
+    "/Users/wuwanqi/Documents/ChatGPT/5013/output/price-memory-evidence/07-response-zero-test.png",
+    "/Users/wuwanqi/Documents/ChatGPT/5013/output/price-memory-evidence/08-model-assumptions.png",
+    "/Users/wuwanqi/Documents/ChatGPT/5013/output/price-memory-evidence/09-code-model.png",
+    "/Users/wuwanqi/Documents/ChatGPT/5013/output/price-memory-evidence/10-interaction-sketch.png"
+  ],
+  "checks": [
+    {
+      "test": "Disclosure reveals usual-price saving",
+      "pass": true
+    },
+    {
+      "test": "Coupon $10 and raise/sale both check out at $90",
+      "pass": true
+    },
+    {
+      "test": "Reference $130 → $150: checkout stays $90, claim 31% → 40%, saving remains 10%",
+      "pass": true
+    },
+    {
+      "test": "Response zero removes modeled revenue advantage at equal checkout prices",
+      "pass": true
+    },
+    {
+      "test": "Mobile shopper layout has no horizontal overflow",
+      "pass": true
+    },
+    {
+      "test": "Mobile price reveal works",
+      "pass": true
+    },
+    {
+      "test": "Mobile merchant layout has no horizontal overflow",
+      "pass": true
+    },
+    {
+      "test": "Chinese language toggle keeps calculation labels populated",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "imagesLoaded": true,
+  "defaults": {
+    "consumerPrice": "$90",
+    "consumerWas": "$130",
+    "consumerDeal": "31% OFF · 11.11",
+    "claimedPercent": "31%",
+    "actualPercent": "10%",
+    "prePreviewPrice": "$130",
+    "prePreviewCopy": "Shopper sees $130; the model keeps $100 as the usual-price baseline.",
+    "eventPreviewCopy": "$130 reference · $100 usual price hidden.",
+    "selectedCheckout": "$90",
+    "selectedDiscount": "31%",
+    "selectedSaving": "10%",
+    "markupRevenue": "$10,385",
+    "couponRevenue": "$9,450",
+    "salesWinner": "Raise + sale leads"
+  },
+  "defaultEvent": {
+    "consumerPrice": "$90",
+    "consumerWas": "$130",
+    "consumerDeal": "31% OFF · 11.11",
+    "claimedPercent": "31%",
+    "actualPercent": "10%",
+    "prePreviewPrice": "$130",
+    "prePreviewCopy": "Shopper sees $130; the model keeps $100 as the usual-price baseline.",
+    "eventPreviewCopy": "$130 reference · $100 usual price hidden.",
+    "selectedCheckout": "$90",
+    "selectedDiscount": "31%",
+    "selectedSaving": "10%",
+    "markupRevenue": "$10,385",
+    "couponRevenue": "$9,450",
+    "salesWinner": "Raise + sale leads"
+  },
+  "coupon": {
+    "consumerPrice": "$90",
+    "consumerWas": "$100",
+    "consumerDeal": "$10 COUPON · 11.11",
+    "claimedPercent": "10%",
+    "actualPercent": "10%",
+    "prePreviewPrice": "$130",
+    "prePreviewCopy": "Shopper sees $130; the model keeps $100 as the usual-price baseline.",
+    "eventPreviewCopy": "$10 coupon · $90 checkout.",
+    "selectedCheckout": "$90",
+    "selectedDiscount": "10%",
+    "selectedSaving": "10%",
+    "markupRevenue": "$10,385",
+    "couponRevenue": "$9,450",
+    "salesWinner": "Raise + sale leads"
+  },
+  "reference150": {
+    "consumerPrice": "$90",
+    "consumerWas": "$150",
+    "consumerDeal": "40% OFF · 11.11",
+    "claimedPercent": "40%",
+    "actualPercent": "10%",
+    "prePreviewPrice": "$150",
+    "prePreviewCopy": "Shopper sees $150; the model keeps $100 as the usual-price baseline.",
+    "eventPreviewCopy": "$150 reference · $100 usual price hidden.",
+    "selectedCheckout": "$90",
+    "selectedDiscount": "40%",
+    "selectedSaving": "10%",
+    "markupRevenue": "$10,800",
+    "couponRevenue": "$9,450",
+    "salesWinner": "Raise + sale leads"
+  },
+  "responseZero": {
+    "consumerPrice": "$90",
+    "consumerWas": "$150",
+    "consumerDeal": "40% OFF · 11.11",
+    "claimedPercent": "40%",
+    "actualPercent": "10%",
+    "prePreviewPrice": "$150",
+    "prePreviewCopy": "Shopper sees $150; the model keeps $100 as the usual-price baseline.",
+    "eventPreviewCopy": "$150 reference · $100 usual price hidden.",
+    "selectedCheckout": "$90",
+    "selectedDiscount": "40%",
+    "selectedSaving": "10%",
+    "markupRevenue": "$9,000",
+    "couponRevenue": "$9,000",
+    "salesWinner": "Same modeled sales"
+  }
+}
